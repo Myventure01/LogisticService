@@ -16,12 +16,13 @@ import com.logistics.demo.model.UserModel;
 import com.logistics.demo.service.LogisticService;
 
 @RestController
+@RequestMapping("/logistics")
 public class LogisticController {
 
 	@Autowired
 	private LogisticService logisticService;
 	
-	@PostMapping(value ="/logistics/saveuser", produces = "application/json", consumes = "application/json")
+	@PostMapping(value ="/saveuser", produces = "application/json", consumes = "application/json")
 	private ResponseEntity<UserModel> saveUserDetails(@RequestBody UserModel userModel){
 		try {
 			UserModel model=logisticService.saveUserData(userModel);
@@ -32,7 +33,7 @@ public class LogisticController {
 		}	
 	}
 	
-	@PostMapping(value ="/logistics/updateuserlocation", produces = "application/json", consumes = "application/json")
+	@PostMapping(value ="/updateuserlocation", produces = "application/json", consumes = "application/json")
 	private ResponseEntity<UpdateUserLocModel> updateLocation(@RequestBody UpdateUserLocModel updateUserLocModel){
 		try {
 			UpdateUserLocModel model=logisticService.updateUserLocation(updateUserLocModel);
@@ -44,7 +45,7 @@ public class LogisticController {
 		}	
 	}
 
-	@GetMapping(value ="/logistics/getlatestlocation", produces = "application/json")
+	@GetMapping(value ="/getlatestlocation", produces = "application/json")
 	private ResponseEntity<UserLatestLocationModel> getUserLatestLocation(@RequestParam String userId){
 		UserLatestLocationModel model=new UserLatestLocationModel();
 		try {
@@ -57,7 +58,7 @@ public class LogisticController {
 		}	
 	}
 	
-	@GetMapping(value ="/logistics/getuserlocations", produces = "application/json")
+	@GetMapping(value ="/getuserlocations", produces = "application/json")
 	private ResponseEntity<UserLocationModel> getUserLocations(@RequestParam String userId){
 		UserLocationModel model=new UserLocationModel();
 		try {
