@@ -1,12 +1,14 @@
 # LogisticService Application
 
-GitHub repository url- https://github.com/Myventure01/LogisticService.git
+    **Project technical details**
+    
+        GitHub repository url- https://github.com/Myventure01/LogisticService.git
 
-JAVA Version used- 8
+        JAVA Version used- 8
 
-Project build cmd- mvn clean install
+        Project build cmd- mvn clean install
 
-Command to run the application- java -jar {projectlocation}/target/LogisticsDemo-0.0.1-SNAPSHOT.war
+        Command to run the application- java -jar {projectlocation}/target/LogisticsDemo-0.0.1-SNAPSHOT.war
 
 H2 database console url- http://localhost:8080/h2-console/
 
