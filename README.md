@@ -1,16 +1,22 @@
 # LogisticService Application
 
-JAVA Version = 8
+GitHub repository url- https://github.com/Myventure01/LogisticService.git
 
-H2 database console url= http://localhost:8080/h2-console/
+JAVA Version used- 8
 
-JDBC URL= jdbc:h2:mem:logistic_db
+Project build cmd- mvn clean install
 
-user name= system
+Command to run the application- java -jar {projectlocation}/target/LogisticsDemo-0.0.1-SNAPSHOT.war
 
-password= system
+H2 database console url- http://localhost:8080/h2-console/
 
-Swagger-url = http://localhost:8080/swagger-ui.html
+JDBC URL- jdbc:h2:mem:logistic_db
+
+user name- system
+
+password- system
+
+Swagger-url - http://localhost:8080/swagger-ui.html
 
 Logistic app contains 4 API with the below functionality implemented
 
