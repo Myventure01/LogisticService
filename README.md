@@ -2,6 +2,7 @@
 
  **Project technical details**
     
+        Created by- Keerthi Prabhashankar
         GitHub repository url- https://github.com/Myventure01/LogisticService.git
 
         JAVA Version used- 8
