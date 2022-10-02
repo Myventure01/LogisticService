@@ -18,15 +18,15 @@ password- system
 
 Swagger-url - http://localhost:8080/swagger-ui.html
 
-Logistic app contains 4 API with the below functionality implemented
+**Logistic app contains 4 API with the below functionality implemented**
 
-1- save/update user
+    1- save/update user
 
-2- Update user location by userId
+    2- Update user location by userId
 
-3- Get user deatils and latest location which is present in the DB
+    3- Get user deatils and latest location which is present in the DB
 
-4- Get all logged location for a particular userId
+    4- Get all logged location for a particular userId
 
 
 
