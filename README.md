@@ -10,7 +10,7 @@
 
         Project build cmd- mvn clean install
 
-        Command to run the application- java -jar {projectlocation}/target/LogisticsDemo-0.0.1-SNAPSHOT.war
+        Command to run the application=> java -jar {projectlocation}/target/LogisticsDemo-0.0.1-SNAPSHOT.war
         
 **H2 & Swagger details**
 
