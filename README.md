@@ -12,7 +12,7 @@
 
         Command to run the application=> java -jar {projectlocation}/target/LogisticsDemo-0.0.1-SNAPSHOT.war
         
-        UML refernce attached with the repository
+        **UML refernce attached with the repository**
         
 **H2 & Swagger details**
 
