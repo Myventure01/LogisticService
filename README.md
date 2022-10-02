@@ -11,6 +11,7 @@
         Command to run the application- java -jar {projectlocation}/target/LogisticsDemo-0.0.1-SNAPSHOT.war
         
 **H2 & Swagger details**
+
       H2 database console url- http://localhost:8080/h2-console/
 
       JDBC URL- jdbc:h2:mem:logistic_db
