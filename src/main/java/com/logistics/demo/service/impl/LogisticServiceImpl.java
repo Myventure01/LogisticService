@@ -13,6 +13,7 @@ import org.springframework.stereotype.Service;
 import com.logistics.demo.entity.LogisticUser;
 import com.logistics.demo.entity.TrackingLocation;
 import com.logistics.demo.exception.InvalidUserException;
+import com.logistics.demo.exception.LogisticException;
 import com.logistics.demo.exception.NoLocationException;
 import com.logistics.demo.model.Location;
 import com.logistics.demo.model.UpdateUserLocModel;
@@ -34,13 +35,20 @@ public class LogisticServiceImpl implements LogisticService {
 	private TrackingLocationRepository trackingLocationRepository;
 
 	@Override
-	public UserModel saveUserData(UserModel userModel) {
-		if (userModel != null) {
-			LogisticUser userEntity = LogisticUtil.getUserEntity(userModel);
-			userEntity = userRepository.save(userEntity);
-			BeanUtils.copyProperties(userEntity, userModel);
+	public UserModel saveUserData(UserModel userModel) throws LogisticException {
+		try {
+			if (userModel != null) {
+				LogisticUser userEntity = LogisticUtil.getUserEntity(userModel);
+				userEntity = userRepository.save(userEntity);
+				BeanUtils.copyProperties(userEntity, userModel);
+			}
+			return userModel;			
 		}
-		return userModel;
+		catch (Exception e) {
+			logger.debug(e);
+			throw new LogisticException("Some error occured! Please try later");
+		}
+		
 	}
 
 	@Override
